@@ -14,16 +14,16 @@ M = lush(function()
 	return {
     -- LSP
     LspCodeLens {base.CodeschoolGray},
-    -- LspDiagnosticsDefaultError {base.CodeschoolRed},
+    LspDiagnosticsDefaultError {base.CodeschoolRed},
     LspDiagnosticsSignError {base.CodeschoolErrorSign},
     -- LspDiagnosticsUnderlineError {base.CodeschoolRedUnderline},
-    -- LspDiagnosticsDefaultWarning {base.CodeschoolYellow},
+    LspDiagnosticsDefaultWarning {base.CodeschoolYellow},
     LspDiagnosticsSignWarning {base.CodeschoolWarningSign},
     -- LspDiagnosticsUnderlineWarning {base.CodeschoolYellowUnderline},
-    -- LspDiagnosticsDefaultInformation {base.CodeschoolBlue},
+    LspDiagnosticsDefaultInformation {base.CodeschoolBlue},
     LspDiagnosticsSignInformation {base.CodeschoolBlueSign},
     -- LspDiagnosticsUnderlineInformation {base.CodeschoolBlueUnderline},
-    -- LspDiagnosticsDefaultHint {base.CodeschoolAqua},
+    LspDiagnosticsDefaultHint {base.CodeschoolAqua},
     LspDiagnosticsSignHint {base.CodeschoolAquaSign},
     LspDiagnosticsUnderlineHint {base.CodeschoolAquaUnderline},
     -- LspDiagnosticsFloatingError {base.CodeschoolRed},
@@ -34,10 +34,14 @@ M = lush(function()
     LspDiagnosticsVirtualTextWarning {base.CodeschoolWarning},
     LspDiagnosticsVirtualTextInformation {base.CodeschoolBlue},
     LspDiagnosticsVirtualTextHint {base.CodeschoolAqua},
-    LspReferenceRead {fg = colors.dark0, bg = hls_lspreference},
-    LspReferenceText {fg = colors.dark0, bg = hls_lspreference},
-    LspReferenceWrite {fg = colors.dark0, bg = hls_lspreference},
+    -- LspReferenceRead {fg = colors.dark0, bg = hls_lspreference},
+    LspReferenceRead {fg = colors.faded_yellow, bg = hls_lspreference},
+    -- LspReferenceText {fg = colors.dark0, bg = hls_lspreference},
+    LspReferenceText {fg = colors.bright_blue, bg = hls_lspreference},
+    -- LspReferenceWrite {fg = colors.dark0, bg = hls_lspreference},
+    LspReferenceWrite {fg = colors.bright_yellow, bg = hls_lspreference},
 	}
 end)
 
 return M
+
