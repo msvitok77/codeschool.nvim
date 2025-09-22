@@ -207,6 +207,7 @@ local base_group = lush(function()
     --[[ ModeMsg {CodeschoolYellowBold},
     MoreMsg {CodeschoolYellowBold}, ]]
     NonText { CodeschoolBg2 },
+    BlameText { fg = fg4 },
     Normal { fg = fg1, bg = background },
     Pmenu { fg = fg1, bg = bg2 },
     PmenuSel { fg = bg2, bg = blue, gui = styles.bold },
@@ -261,7 +262,7 @@ local base_group = lush(function()
     SpecialChar { CodeschoolBlue },
     Tag { CodeschoolAquaBold },
     Delimiter { Special },
-    Comment { fg = bg4, gui = styles.italic_comments },
+    Comment { fg = fg4, gui = styles.italic_comments },
     Debug { CodeschoolRed },
     Underlined { fg = blue, gui = styles.underline },
     Bold { gui = styles.bold },
@@ -289,3 +290,4 @@ local base_group = lush(function()
 end)
 
 return base_group
+
