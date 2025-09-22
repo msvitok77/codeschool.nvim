@@ -10,7 +10,7 @@ M = lush(function()
     GitSignsAdd {base.CodeschoolGreenSign},
     GitSignsChange {base.CodeschoolBlueSign},
     GitSignsDelete {base.CodeschoolRedSign},
-    -- GitSignsCurrentLineBlame {base.NonText},
+    GitSignsCurrentLineBlame {base.BlameText},
 	}
 end)
 
